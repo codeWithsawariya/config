@@ -1,0 +1,137 @@
+<p>medical-staff works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRay Sidebar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqk1Q27o42PkK36  +oCp6A2OiABdM7A+8WNbEb+icm+pQ63  o/e9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #008CBA;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            background-color: #008CBA;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            
+        }
+
+        .sidebar li a:hover {
+            background-color: #006699;
+        }
+
+        .sidebar li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar .brand {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .brand img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .sidebar .brand span {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        .new-badge {
+            background-color: #f44336;
+            color: white;
+            padding: 3px 7px;
+            font-size: 0.8rem;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="brand">
+            <img src="https://via.placeholder.com/30x30" alt="XRay Logo">
+            <span>XRay</span>
+        </div>
+        <h3>Dashboard</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-hospital"></i> Doctor Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-home"></i> Hospital Dashboard 1</a></li>
+            <li><a href="#"><i class="fas fa-briefcase"></i> Hospital Dashboard 2</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Patient Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Covid-19 Dashboard<span class="new-badge">New</span></a></li>
+        </ul>
+        <h3>Apps</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="#"><i class="fas fa-user-md"></i> Doctors</a></li>
+            <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+            <li><a href="#"><i class="fas fa-comment-alt"></i> Chat</a></li>
+        </ul>
+        <h3>Components</h3>
+        <ul>
+            <li><a href="#"><i class="fas fa-th-large"></i> UI Elements</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> Forms</a></li>
+            <li><a href="#"><i class="fas fa-file-invoice-dollar"></i> Forms Wizard</a></li>
+            <li><a href="#"><i class="fas fa-table"></i> Table</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar"></i> Charts</a></li>
+            <li><a href="#"><i class="fas fa-dot-circle"></i> Icons</a></li>
+        </ul>
+        <h3>Pages</h3>
+    </div>
+
+    <div class="content">
+        <!-- Your main content here -->
+        <h1>Welcome to XRay</h1>
+        <p>This is a simple sidebar example using Bootstrap and custom CSS for styling.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #f8f9fa; /* Light background for the body */
+  }
+  
+  #wrapper {
+    display: flex;
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    width: 250px; /* Fixed width for the sidebar */
+    position: sticky;
+    top: 0; /* Keeps the sidebar at the top */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  .sidebar-heading {
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #005f73; /* Match with login theme */
+    color: white; /* Ensure text is readable */
+  }
+  
+  .list-group-item {
+    border: none;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    color: #005f73; /* Text color */
+  }
+  
+  .list-group-item:hover {
+    background-color: #0a9396; /* Highlight color on hover */
+    color: white; /* Change text color on hover */
+  }
+  
+  #logout-button {
+    margin-left: auto;
+  }
+  
+  .mat-icon {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
+  /* Dropdown Styles */
+  .mat-menu-item {
+    color: white; /* Text color for menu items */
+    padding: 12px 20px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .mat-menu-item:hover {
+    background-color: #0a9396; /* Highlight on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Dropdown Menu Background */
+  .mat-menu-panel {
+    background-color: #005f73; /* Match dropdown background */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  /* Transition Effect for Dropdown */
+  .mat-menu-trigger {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .mat-menu-trigger:hover {
+    background-color: #0a9396; /* Change background color on hover */
+  }
+  
+  /* Active State */
+  .mat-menu-item.active {
+    background-color: #007f5f; /* Active item color */
+  }
+  
+  /* Dark Mode Adjustments */
+  .dark-mode {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .dark-mode .bg-dark {
+    background-color: #495057 !important;
+  }
+  
+  .dark-mode .bg-light {
+    background-color: #6c757d !important;
+  }
+  
+  #page-content-wrapper {
+    position: relative;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0; /* Keeps the navbar at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+    background-color: #005f73; /* Match with sidebar */
+    color: white; /* Text color */
+  }
+  
+  .navbar .container-fluid {
+    height: 100%; /* Make sure the container takes full height */
+  }
+  
+  .mainDiv {
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+    background-color: #eee4e4;
+    align-items: center;
+    position: relative; /* For absolute positioning of innerDiv2 */
+  }
+  
+  .innerDiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 900px;
+    position: relative; /* Keep this for stacking context */
+    border-radius: 50px;
+    background-color: #089bab; /* Match with login page */
+  }
+  
+  .innerDiv2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    height: 750px;
+    width: 600px;
+    position: absolute; /* Use absolute positioning */
+    left: 60%; /* Move it to the right */
+    margin-left: -10px; /* Pull it back half its width */
+    z-index: 1; /* Ensure it overlaps innerDiv1 */
+    border-radius: 50px;
+    background-color: #fff;
+  }
+  
+  .text {
+    height: 100px; /* Set fixed height for logo container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
+  }
+  
+  .text img {
+    height: 120px; /* Set height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 80px;
+  }
+  
+  img {
+    height: 350px; /* Set fixed height for the main image */
+    width: 450px; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: rounded corners for the image */
+    margin-right: 30%;
+  }
+  
